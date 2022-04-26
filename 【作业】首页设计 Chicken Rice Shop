@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width:device-width, initial-scale:1.0">
+        <title>HOMEWORK 01</title>
+        <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Audiowide|Lobster&amp;effect=fire|neon|outline|emboss|shadow-multiple">
+
+        <style>
+            #shopname{
+                font-family:Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+                font-size: 100px;
+                font-weight: 400;
+                text-align: center;
+                margin-top: 0;
+                margin-bottom:25px;
+                color: black;
+                text-shadow: rgb(255, 255, 255);
+            }
+            nav ul{
+                font-family: Audiowide, sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            nav ul li{
+                float:left;
+            }
+            nav ul li a {
+                display: block;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                padding: 15px;
+                text-decoration: none;
+            }
+            
+            nav ul li a:hover {
+            background-color: #111111;
+            }
+
+            #menu{
+                font-family: Lobster, sans-serif;
+                font-size: 40px;
+                color:rgb(0, 0, 0);
+                text-shadow:0 0 10px rgb(255, 255, 255);
+                text-align: center;
+            }
+
+            body{
+                background-image: url('https://thumbs.dreamstime.com/b/chicken-rice-25869687.jpg');
+                background-repeat: no-repeat;
+                background-attachment: scroll; 
+                background-size: cover;
+            }
+
+            table tr{
+                height: 60px;
+                font-family: Audiowide, sans-serif;
+                font-weight: 700;
+                color:black;
+                text-shadow:0 0 10px rgb(255, 255, 255);
+                
+            }
+
+            table td{
+                padding: 10px;
+
+            }
+            .item{
+                text-align: left;
+                vertical-align: top;
+            }
+
+            .price{
+                text-align: right;
+                vertical-align: top;
+            }
+
+            footer h1{
+                font-family: Lobster, sans-serif;
+                color: rgb(0, 0, 0);
+            }
+
+            footer dl{
+                font-family: Audiowide, sans-serif;
+                color: rgb(0, 0, 0);
+                width:50%
+            }
+            footer form{
+                font-family: Audiowide, sans-serif;
+                color: rgb(5, 0, 0);
+                width:50%
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="shopname" class="font-effect-neon">Chicken rice shop</h1>   
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#order">ORDER</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content">
+            <div id="menublock">
+                <h1 id="menu" style="margin:0px;">MENU</h1>
+                <table id="breakfast">
+                    <tbody><tr>
+                        <td class="item">Chicken Rice</td>
+                        <td class="price">RM 5.00</td>
+                        <td class="item">Chicken Rice With Egg</td>
+                        <td class="price">RM 6.00</td>
+                        <td class="item">Chicken Rice With Vegetable</td>
+                        <td class="price">RM 6.00</td>
+                    </tr>
+                    <tr>
+                        <td class="item">Chicken Rice Extra Chicken</td>
+                        <td class="price">RM 8.99</td>
+                        <td class="item">Chicken Rice With Mushroom</td>
+                        <td class="price">RM 6.99</td>
+                        <td class="item">Chicken Rice With Cheese</td>
+                        <td class="price">RM 7.99</td>
+                    </tr>
+                    <tr>
+                        <td class="item">Cola</td>
+                        <td class="price">RM 1.99</td>
+                        <td class="item">Pepsi</td>
+                        <td class="price">RM 1.99</td>
+                        <td class="item">Juice</td>
+                        <td class="price">RM 1.00</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <footer>
+                <h1>Contact Us</h1>
+                <dl>
+                    <dt>Telephone</dt>
+                    <dd>+60101401400</dd>
+                    <dt>Address</dt>
+                    <dd>Lot 1614, Kok Lanas, Ketereh 164500 Kelantan</dd>
+                </dl>
+                <br>
+                <hr style="border-style: groove; width:75%;">
+                <h1>Business Hours</h1>
+                <dl>
+                    <dt>Sun-Thu</dt>
+                    <dd>0800~2200</dd>
+                    <dt>Fri-Sat</dt>
+                    <dd>Sorry, We're <b>CLOSED</b></dd>
+                </dl>
+                <br>
+                <hr style="border-style: groove; width:75%;">
+                <h1>Leave Us a Message</h1>
+                <form action="form_action.php" method="GET">
+                    
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname">
+                    <br>
+                    
+                    <label for="message">Message </label>
+                    <br>
+                    <textarea rows="4" id="message" style="width:445px; height:100px;"></textarea>
+                    <br>
+                    <input type="submit" value="Send">
+                </form>
+                <p style="font-family: Lobster, sans-serif; text-align:right; background-color: black; color: whitesmoke; padding:5px;">Ⓒ 2022 | All Rights Reserved | Design by XXX</p>
+            </footer>
+        </div>       
+    
+</body></html>
